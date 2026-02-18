@@ -49,14 +49,15 @@ const Header = () => {
           top: 0,
           backgroundColor: "white",
           zIndex: 1000,
-          color: "#654321",
+          color: "#8B4513",
           boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
           alignItems: "center",
+          boxSizing: "border-box",
         }}
       >
         <div>
           {/* Logo Placeholder */}
-          <span style={{ fontWeight: "bold", color: "#654321" }}>
+          <span style={{ fontWeight: "bold", color: "#8B4513" }}>
             {t("company_name")}
           </span>
         </div>
@@ -67,7 +68,7 @@ const Header = () => {
             className="nav-link"
             style={{
               margin: "0 1rem",
-              color: "#654321",
+              color: "#8B4513",
               textDecoration: "none",
               transition: "color 0.3s",
             }}
@@ -80,7 +81,7 @@ const Header = () => {
             className="nav-link"
             style={{
               margin: "0 1rem",
-              color: "#654321",
+              color: "#8B4513",
               textDecoration: "none",
               transition: "color 0.3s",
             }}
@@ -93,7 +94,7 @@ const Header = () => {
             className="nav-link"
             style={{
               margin: "0 1rem",
-              color: "#654321",
+              color: "#8B4513",
               textDecoration: "none",
               transition: "color 0.3s",
             }}
@@ -108,7 +109,7 @@ const Header = () => {
             className="lang-btn"
             style={{
               marginRight: "0.5rem",
-              backgroundColor: i18n.language === "en" ? "#A0522D" : "#654321",
+              backgroundColor: i18n.language === "en" ? "#A0522D" : "#8B4513",
               color: "white",
               border: "none",
               padding: "0.5rem",
@@ -123,7 +124,7 @@ const Header = () => {
             disabled={i18n.language === "hy"}
             className="lang-btn"
             style={{
-              backgroundColor: i18n.language === "hy" ? "#A0522D" : "#654321",
+              backgroundColor: i18n.language === "hy" ? "#A0522D" : "#8B4513",
               color: "white",
               border: "none",
               padding: "0.5rem",
