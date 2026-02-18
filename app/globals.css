@@ -1,13 +1,31 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --background: #F5DEB3;
-  --foreground: #8B4513;
+@theme {
+  --color-brown-50: #FDF5E6;
+  --color-brown-100: #F5DEB3;
+  --color-brown-200: #DEB887;
+  --color-brown-300: #D2B48C;
+  --color-brown-400: #BC8F8F;
+  --color-brown-500: #A0522D;
+  --color-brown-600: #8B4513;
+  --color-brown-700: #704214;
+  --color-brown-800: #5D3A1A;
+  --color-brown-900: #3E2723;
+
+  --color-tan-50: #FFF9F0;
+  --color-tan-100: #F5F5DC;
+  --color-tan-200: #EEDC82;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
+@layer base {
+  :root {
+    --background: #F5DEB3;
+    --foreground: #8B4513;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    @apply antialiased;
+  }
 }
